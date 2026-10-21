@@ -1,0 +1,13 @@
+# Ultralytics YOLO dataset configuration
+# Paths are relative to this file's directory.
+path: yolo_format_dataset
+train: images/train
+val: images/val
+test: images/test
+
+# Class IDs must match the first value in each YOLO label row.
+names:
+  0: other
+  1: type1
+  2: type1a
+  3: type1b
