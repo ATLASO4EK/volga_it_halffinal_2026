@@ -1,0 +1,5 @@
+# torch ставится отдельно (см. INSTRUCTION.md, шаг 4), чтобы получить сборку под вашу видеокарту
+ultralytics
+fast-plate-ocr[onnx]
+opencv-python
+numpy

@@ -1,0 +1,155 @@
+validate_dataset.py v1.0 — Волга-IT 2026, полуфинал, номинация «ИИ и анализ данных»
+Датасет: D:\Coding\Python\volga_it_halffinal_2026\omega_dataset\dataset
+
+== Статистика ==
+Изображений: 6021 (реальных 590, синтетических 5418, без разметки в meta 13)
+Строк в meta.csv: 7560
+Знаков по типам: {'type1a': 2708, 'type1': 3117, 'type1b': 1183, 'other': 552}
+Реальных изображений по типам: {'type1a': 255, 'type1': 253, 'type1b': 75, 'other': 50}  (рекомендуется {'type1a': 150, 'type1b': 300, 'other': 50})
+Уникальных читаемых ГРЗ (реальные): {'type1b': 62, 'type1a': 186, 'type1': 192, 'other': 51}  (рекомендуется {'type1a': 50, 'type1b': 100})
+Условия съёмки: {}
+Лицензии: {'CC-BY-4.0': 7560}
+Источники (топ): {'own_photo': 7560}
+Побайтовых дубликатов: 8; совпадений с отладочным набором: 0
+
+== ERROR: 0 ==
+
+== WARNING: 9357 ==
+-- labels (7560)
+   [WARNING] labels                 labels/0.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:2
+   [WARNING] labels                 labels/1.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:12
+   [WARNING] labels                 labels/1.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:13
+   [WARNING] labels                 labels/10.txt: класс 3 (other) ≠ plate_type=type1b в meta.csv:14
+   [WARNING] labels                 labels/100.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:15
+   [WARNING] labels                 labels/101.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:25
+   [WARNING] labels                 labels/101.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:26
+   [WARNING] labels                 labels/101.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:27
+   [WARNING] labels                 labels/102.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:55
+   [WARNING] labels                 labels/103.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:65
+   [WARNING] labels                 labels/104.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:75
+   [WARNING] labels                 labels/105.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:85
+   [WARNING] labels                 labels/106.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:95
+   [WARNING] labels                 labels/107.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:105
+   [WARNING] labels                 labels/108.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:115
+   [WARNING] labels                 labels/109.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:125
+   [WARNING] labels                 labels/11.txt: класс 0 (type1) ≠ plate_type=other в meta.csv:144
+   [WARNING] labels                 labels/110.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:145
+   [WARNING] labels                 labels/111.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:155
+   [WARNING] labels                 labels/112.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:165
+   [WARNING] labels                 labels/112.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:166
+   [WARNING] labels                 labels/112.txt: класс 0 (type1) ≠ plate_type=other в meta.csv:167
+   [WARNING] labels                 labels/112.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:168
+   [WARNING] labels                 labels/112.txt: класс 0 (type1) ≠ plate_type=other в meta.csv:169
+   [WARNING] labels                 labels/113.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:215
+   [WARNING] labels                 labels/114.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:225
+   [WARNING] labels                 labels/115.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:235
+   [WARNING] labels                 labels/115.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:236
+   [WARNING] labels                 labels/115.txt: класс 1 (type1a) ≠ plate_type=type1 в meta.csv:237
+   [WARNING] labels                 labels/116.txt: класс 2 (type1b) ≠ plate_type=type1a в meta.csv:265
+   ... ещё 7530 (см. JSON-отчёт)
+-- meta-bbox (1026)
+   [WARNING] meta-bbox              meta.csv:165: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:166: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:168: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:168: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:169: очень маленький знак 11x8 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:170: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:171: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:173: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:173: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:174: очень маленький знак 11x8 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:175: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:176: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:178: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:178: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:179: очень маленький знак 11x8 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:180: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:181: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:183: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:183: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:184: очень маленький знак 11x8 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:185: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:186: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:188: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:188: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:189: очень маленький знак 11x8 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:190: type1, но соотношение сторон bbox 1.62 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:191: type1, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:193: очень маленький знак 8x5 px — проверьте разметку
+   [WARNING] meta-bbox              meta.csv:193: type1, но соотношение сторон bbox 1.60 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:194: очень маленький знак 11x8 px — проверьте разметку
+   ... ещё 996 (см. JSON-отчёт)
+-- meta-conditions (738)
+   [WARNING] meta-conditions        meta.csv:2: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:12: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:13: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:14: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:15: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:25: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:26: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:27: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:55: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:65: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:75: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:85: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:95: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:105: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:115: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:125: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:144: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:145: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:155: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:165: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:166: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:167: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:168: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:169: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:215: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:225: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:235: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:236: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:237: conditions пусто для реального изображения
+   [WARNING] meta-conditions        meta.csv:265: conditions пусто для реального изображения
+   ... ещё 708 (см. JSON-отчёт)
+-- no-meta (13)
+   [WARNING] no-meta                images/real/168.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/real/17.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/real/413.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/real/437.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_01.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_02.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_03.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_04.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_05.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_06.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_07.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_08.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+   [WARNING] no-meta                images/synthetic/168_09.jpg: изображение не упомянуто в meta.csv (негативный кадр без знаков? тогда всё равно нужна строка с plate_type=other или удалите файл)
+-- meta-plate (10)
+   [WARNING] meta-plate             meta.csv:5774: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5775: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5776: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5777: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5778: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5779: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5780: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5781: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5782: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+   [WARNING] meta-plate             meta.csv:5783: plate_type=other, но номер «H001AX777» выглядит как обычный знак типа 1 — проверьте тип
+-- duplicate-image (8)
+   [WARNING] duplicate-image        images/synthetic/511_01.jpg: побайтовые дубликаты: images/synthetic/513_01.jpg
+   [WARNING] duplicate-image        images/synthetic/511_02.jpg: побайтовые дубликаты: images/synthetic/513_02.jpg
+   [WARNING] duplicate-image        images/synthetic/511_03.jpg: побайтовые дубликаты: images/synthetic/513_03.jpg
+   [WARNING] duplicate-image        images/synthetic/511_04.jpg: побайтовые дубликаты: images/synthetic/513_04.jpg
+   [WARNING] duplicate-image        images/synthetic/511_05.jpg: побайтовые дубликаты: images/synthetic/513_05.jpg
+   [WARNING] duplicate-image        images/synthetic/511_06.jpg: побайтовые дубликаты: images/synthetic/513_06.jpg
+   [WARNING] duplicate-image        images/synthetic/511_07.jpg: побайтовые дубликаты: images/synthetic/513_07.jpg
+   [WARNING] duplicate-image        images/synthetic/511_08.jpg: побайтовые дубликаты: images/synthetic/513_08.jpg
+-- volume (2)
+   [WARNING] volume                 <root>: реальных изображений type1b: 75, рекомендуется не менее 300
+   [WARNING] volume                 <root>: уникальных полностью читаемых ГРЗ type1b на реальных фото: 62, рекомендуется не менее 100
+
+Напоминание (проверяется жюри вручную): лица людей размыты; нет кадров, где человек — смысловой центр;
+материалы получены легально (п. 6.3); разметка не сфальсифицирована (п. 8).
+
+ИТОГ: валидация ПРОЙДЕНА с предупреждениями. Ошибок: 0, предупреждений: 9357.
